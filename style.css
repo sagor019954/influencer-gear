@@ -1,0 +1,143 @@
+body {
+    width: 1440px;
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.navbar-item ul {
+    display: flex;
+
+}
+
+.navbar-item li {
+    list-style-type: none;
+    padding-right: 20px;
+
+}
+
+.navbar-item a {
+    text-decoration: none;
+    color: black;
+}
+
+/* header part */
+header {}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 10px;
+}
+
+.header-link {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    width: 217px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.header-info {
+    width: 582px;
+    height: 270px;
+    padding-top: 75px;
+}
+
+.header-img img {
+    width: 440px;
+    height: 414px;
+    border: 5px solid rgb(240, 235, 235);
+    border-radius: 50%;
+}
+
+/* shopping */
+.shopping {
+    display: flex;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    width: 1110px;
+    height: 110px;
+    border: 1px solid rgb(239, 232, 232);
+    margin-top: 30px;
+}
+
+.shopping-img {
+    padding-left: 60px;
+    padding-top: 50px;
+}
+
+/* popular collection */
+.device-title {
+    width: 1075px;
+    margin-left: 230px;
+    margin-right: 200px;
+    margin-top: 60px;
+}
+
+.title {
+    text-align: center;
+}
+
+.device-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 25px;
+
+}
+
+.device {
+    background-color: #ffff;
+    width: 320px;
+    height: 476px;
+    padding-left: 15px;
+    padding-top: 15px;
+    border-radius: 5px;
+    box-shadow: -1px 1px 10px rgb(231, 223, 223);
+
+}
+
+.device-img {}
+
+.device-img img {
+    width: 300px;
+    height: 256px;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .header-img {
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: column-reverse;
+
+    }
+
+    .shopping {
+        flex-flow: row wrap;
+    }
+
+    .device-main {
+        grid-template-columns: repeat(1, 1fr);
+
+        .header-img img {
+            width: 100%;
+        }
+
+    }
+
+
+}
